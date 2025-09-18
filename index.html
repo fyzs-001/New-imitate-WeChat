@@ -149,25 +149,5 @@
 			</a>
 		</div>
 	</div>
-	<script>
-	    window.onload = function() {
-	        const wechat = document.getElementById('wechatAlert');
-	        
-	        setTimeout(() => {
-	            wechat.classList.add('active');
-	        }, 1500);
-	
-	        setTimeout(() => {
-	            wechat.classList.remove('active');
-	            wechat.classList.add('hide');
-	        }, 4500);
-	
-	        wechat.addEventListener('transitionend', () => {
-	            if (wechat.classList.contains('hide')) {
-	                wechat.remove();
-	            }
-	        });
-	    };
-	</script>
 </body>
 </html>

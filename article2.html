@@ -253,18 +253,6 @@
   <script>
     // 监听滚动，为进入视口的段落添加动画
     document.addEventListener('DOMContentLoaded', () => {
-      // 弹窗
-       const notification = document.getElementById('wechatNotification');
-      
-      // 页面加载2秒后显示弹窗
-      setTimeout(() => {
-        notification.classList.add('show');
-        
-        // 2秒后自动隐藏弹窗
-        setTimeout(() => {
-          notification.classList.remove('show');
-        }, 4000);
-      }, 2000);
       
       // 文章段落动画
       const paragraphs = document.querySelectorAll('.article-paragraph');
